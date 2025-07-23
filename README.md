@@ -11,12 +11,6 @@ O objetivo é demonstrar como essa seletividade permite um controle mais preciso
 * **`index.html`**: Contém a estrutura da página com `div`s, `p`s e `span`s aninhados, criando uma árvore de elementos para os seletores.
 * **`style.css` (embutido)**: Contém as regras que usam o combinador `>` para aplicar estilos de forma exata, atingindo apenas os filhos diretos dos elementos.
 
-### **Visualização do Código**
-
-Você pode ver abaixo uma captura de tela do código para referência:
-
-![Print](c:\Users\Gabri\OneDrive\Imagens\Screenshots\Captura de tela 2025-07-23 164721.png)
-
 ### **Como Visualizar no Navegador**
 
 1.  Clone ou baixe o repositório.
