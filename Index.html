@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            Combinadores: qual tipo de ralação entre 2 seletores.
+            1. Combinador descendente (espaço)
+            2. Combinador filho (>)
+            3. Combinador irmão adjacente (+)
+            4. Combinador irmão em geral (~)
+
+            [SELETOR] [COMBINADOR] [SELETOR]
+
+        */
+        .fundo-branco > p {
+            color: yellow;
+            background-color: gray;
+            width: 300px;
+            height: 30px;
+            border: solid 1px;
+            border-radius: 0 30px 0 30px;
+            text-align: center;
+            margin-top: 5px;
+            margin: 15px;
+        }
+        .fundo-branco span > p {
+            color: lightblue;
+            background-color: lightcoral;
+            width: 300px;
+            height: 30px;
+            border: solid 1px;
+            border-radius: 0 30px 0 30px;
+            text-align: center;
+            margin-top: 10px;
+            margin: 15px;
+        }
+        .fundo-verde > p {
+            color: gray;
+            background-color: yellow;
+            width: 200px;
+            height: 30px;
+            border: solid 1px;
+            border-radius: 0 30px 0 30px;
+            text-align: center;
+            margin-top: 5px;
+            margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fundo-branco">
+        <p>Parágrafo 1 dentro da div</p>
+        <p>Parágrafo 2 dentro da div</p>
+        <span>
+            <p> Parágrafo 3 dentro da div, dentro do Span</p>
+        </span>
+    </div>
+    <p> Parágrafo 4, fora da div</p>
+    <p> Parágrafo 5, fora da div</p>
+
+    <div class="fundo-verde">
+        <p>Parágrafo 1 dentro da div</p>
+        <p>Parágrafo 2 dentro da div</p>
+        <span>
+            <p> Parágrafo 3 dentro da div, dentro do Span</p>
+        </span>
+    </div>
+    <p> Parágrafo 4, fora da div</p>
+    <p> Parágrafo 5, fora da div</p>
+</body>
+</html>
